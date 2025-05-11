@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Marketing Campaign: Budget & Implementation Plan</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #34495e;
+            --success-color: #2ecc71;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .intro {
+            padding: 20px;
+            background-color: var(--light-color);
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .collapsible {
+            background-color: var(--secondary-color);
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.4s;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .active, .collapsible:hover {
+            background-color: #2980b9;
+        }
+        
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+            font-size: 22px;
+        }
+        
+        .active:after {
+            content: "\2212";
+        }
+        
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: white;
+        }
+        
+        .sub-collapsible {
+            background-color: #f1f1f1;
+            color: var(--dark-color);
+            cursor: pointer;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            transition: 0.4s;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .sub-active, .sub-collapsible:hover {
+            background-color: #e9e9e9;
+        }
+        
+        .sub-collapsible:after {
+            content: '\002B';
+            color: var(--dark-color);
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+        
+        .sub-active:after {
+            content: "\2212";
+        }
+        
+        .sub-content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: white;
+        }
+        
+        .inner-content {
+            padding: 20px;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        h3 {
+            color: var(--dark-color);
+            margin: 15px 0 10px;
+            font-size: 18px;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background-color: #fffacd;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+        
+        .fee-box {
+            border: 2px solid var(--success-color);
+            background-color: rgba(46, 204, 113, 0.1);
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .fee-total {
+            font-weight: bold;
+            font-size: 18px;
+            color: var(--dark-color);
+        }
+        
+        .budget-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        
+        .budget-label {
+            font-weight: 600;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .collapsible, .sub-collapsible {
+                padding: 15px;
+            }
+            
+            .inner-content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Insurance Marketing Campaign: Budget & Implementation Plan</h1>
+        </header>
+        
+        <div class="intro">
+            <p>This document outlines a comprehensive marketing plan for promoting insurance products, including budget allocation, implementation strategy, and product selection guidelines. Use the collapsible panels below to explore each section at your own pace.</p>
+        </div>
+        
+        <button class="collapsible">Facebook Advertising Budget</button>
+        <div class="content">
+            <div class="inner-content">
+                <h2>Facebook Ads Investment Structure</h2>
+                
+                <button class="sub-collapsible">Testing Phase (Weeks 1-2)</button>
+                <div class="sub-content">
+                    <div class="inner-content">
+                        <div class="budget-item">
+                            <span class="budget-label">Budget:</span>
+                            <span>CAD $500-750 (approximately $250-375/week)</span>
+                        </div>
+                        <h3>Purpose:</h3>
+                        <p>Test different ad creatives, audiences, and messaging to identify what resonates best with potential insurance clients.</p>
+                        
+                        <h3>Key Metrics Focus:</h3>
+                        <ul>
+                            <li>Click-Through Rate (CTR)</li>
+                            <li>Engagement rate</li>
+                            <li>Cost per click</li>
+                        </ul>
+                        
+                        <h3>Expected Outcomes:</h3>
+                        <p>By the end of this phase, we will have identified 2-3 winning ad combinations that can be scaled in the next phase.</p>
+                    </div>
+                </div>
+                
+                <button class="sub-collapsible">Scaling Phase (Weeks 3-8)</button>
+                <div class="sub-content">
+                    <div class="inner-content">
+                        <div class="budget-item">
+                            <span class="budget-label">Budget:</span>
+                            <span>CAD $1,500-3,000 (approximately $250-500/week)</span>
+                        </div>
+                        <h3>Purpose:</h3>
+                        <p>Scale successful ads from the testing phase to reach a broader audience and generate consistent leads.</p>
+                        
+                        <h3>Key Metrics Focus:</h3>
+                        <ul>
+                            <li>Cost per lead</li>
+                            <li>Conversion rate</li>
+                            <li>Lead quality indicators</li>
+                        </ul>
+                        
+                        <h3>Expected Outcomes:</h3>
+                        <p>Establish a reliable lead generation system with predictable costs and conversion rates.</p>
+                    </div>
+                </div>
+                
+                <button class="sub-collapsible">Optimization Phase (Ongoing)</button>
+                <div class="sub-content">
+                    <div class="inner-content">
+                        <div class="budget-item">
+                            <span class="budget-label">Budget:</span>
+                            <span>CAD $1,500-2,500/month</span>
+                        </div>
+                        <h3>Purpose:</h3>
+                        <p>Maintain consistent lead flow with continually optimized campaigns to improve efficiency.</p>
+                        
+                        <h3>Key Metrics Focus:</h3>
+                        <ul>
+                            <li>Return on Ad Spend (ROAS)</li>
+                            <li>Cost per acquisition</li>
+                            <li>Customer lifetime value to acquisition cost ratio</li>
+                        </ul>
+                        
+                        <h3>Expected Outcomes:</h3>
+                        <p>A sustainable marketing system that delivers predictable results with gradually improving efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button class="collapsible">Ad Frequency Recommendations</button>
+        <div class="content">
+            <div class="inner-content">
+                <h3>Optimal Ad Frequency Guidelines</h3>
+                <ul>
+                    <li>Aim for frequency score under 2.0 during the first week (avoiding ad fatigue)</li>
+                    <li>Refresh creative assets every 2-3 weeks to maintain audience interest</li>
+                    <li>Schedule ads for peak engagement periods:
+                        <ul>
+                            <li>Weekdays: 6-9pm local time</li>
+                            <li>Weekends: 10am-1pm local time</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h3>Ad Rotation Strategy</h3>
+                <p>For optimal results, we recommend maintaining 3-4 different ad creatives in rotation at any given time, with varied:
+                <ul>
+                    <li>Visuals/graphics</li>
+                    <li>Headlines</li>
+                    <li>Primary text messages</li>
+                    <li>Call-to-action buttons</li>
+                </ul>
+                
+                <h3>Budget Allocation Across Audiences</h3>
+                <ul>
+                    <li>70% to best-performing audiences</li>
+                    <li>20% to promising but unproven audiences</li>
+                    <li>10% to experimental new audiences</li>
+                </ul>
+            </div>
+        </div>
+        
+        <button class="collapsible">Service Fee Structure</button>
+        <div class="content">
+            <div class="inner-content">
+                <div class="fee-box">
+                    <p class="fee-total">Monthly retainer: CAD $45/hour × 40 hours = CAD $1,800/month</p>
+                </div>
+                
+                <h3>Services Included:</h3>
+                <ul>
+                    <li><strong>Campaign Strategy Development</strong>: Creating comprehensive marketing plans aligned with business goals</li>
+                    <li><strong>Ad Creative Design and Copywriting</strong>: Producing engaging visual assets and persuasive ad copy</li>
+                    <li><strong>Campaign Setup and Optimization</strong>: Implementing, monitoring, and refining ad campaigns</li>
+                    <li><strong>Weekly Performance Reporting</strong>: Detailed analytics on campaign performance and ROI</li>
+                    <li><strong>A/B Testing Implementation</strong>: Systematic testing to continuously improve results</li>
+                </ul>
+                
+                <h3>Payment Terms:</h3>
+                <ul>
+                    <li>Invoiced monthly</li>
+                    <li>Payment due within 15 days of invoice date</li>
+                    <li>Ad spend billed separately from service fees</li>
+                </ul>
+            </div>
+        </div>
+        
+        <button class="collapsible">Insurance Product Selection Guidelines</button>
+        <div class="content">
+            <div class="inner-content">
+                <p>When selecting insurance products to feature in campaigns, consider the following frameworks:</p>
+                
+                <button class="sub-collapsible">Market Analysis Criteria</button>
+                <div class="sub-content">
+                    <div class="inner-content">
+                        <h3>Local Competitive Landscape</h3>
+                        <ul>
+                            <li>Identify underserved niches in your geographic area</li>
+                            <li>Analyze competitor pricing and coverage options</li>
+                            <li>Determine areas where your offerings have distinct advantages</li>
+                        </ul>
+                        
+                        <h3>Seasonal Demand Patterns</h3>
+                        <ul>
+                            <li>Health insurance: Open enrollment periods</li>
+                            <li>Auto insurance: New car buying seasons</li>
+                            <li>Home insurance: Real estate high seasons</li>
+                            <li>Life insurance: Tax season and major life events</li>
+                        </ul>
+                        
+                        <h3>Profit Margin Per Product</h3>
+                        <ul>
+                            <li>Focus on products with higher commission structures</li>
+                            <li>Consider lifetime value potential of different product categories</li>
+                            <li>Balance between high-volume, low-margin and low-volume, high-margin products</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button class="sub-collapsible">Product Prioritization Framework</button>
+                <div class="sub-content">
+                    <div class="inner-content">
+                        <h3>High-margin Products</h3>
+                        <ul>
+                            <li>Whole life insurance vs. term life insurance</li>
+                            <li>Comprehensive coverage options vs. basic plans</li>
+                            <li>Products with valuable add-ons or riders</li>
+                        </ul>
+                        
+                        <h3>Products with Simple Qualification Processes</h3>
+                        <ul>
+                            <li>No-medical-exam life insurance options</li>
+                            <li>Instant-issue policies</li>
+                            <li>Pre-approved offers for specific customer segments</li>
+                        </ul>
+                        
+                        <h3>Products with Shorter Sales Cycles</h3>
+                        <ul>
+                            <li>Auto and renters insurance (typically faster decisions)</li>
+                            <li>Simple term life policies for young families</li>
+                            <li>Supplemental insurance products</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button class="sub-collapsible">Customer Demand Indicators</button>
+                <div class="sub-content">
+                    <div class="inner-content">
+                        <h3>Age Demographics in Target Region</h3>
+                        <ul>
+                            <li>Younger populations (25-35): Term life, auto, renters insurance</li>
+                            <li>Middle-age (35-50): Home, comprehensive auto, family life insurance</li>
+                            <li>Pre-retirement (50-65): Long-term care, enhanced health options</li>
+                            <li>Seniors (65+): Medicare supplements, final expense insurance</li>
+                        </ul>
+                        
+                        <h3>Common Life Events</h3>
+                        <ul>
+                            <li>Home purchase: Homeowners insurance, mortgage protection</li>
+                            <li>New children: Life insurance, college savings plans</li>
+                            <li>Retirement planning: Annuities, long-term care insurance</li>
+                            <li>Business ownership: Commercial insurance, key person coverage</li>
+                        </ul>
+                        
+                        <h3>Local Economic Conditions</h3>
+                        <ul>
+                            <li>High-income areas: Premium products with extensive coverage</li>
+                            <li>Middle-income regions: Value-focused coverage with essential protection</li>
+                            <li>Growing economic areas: Business insurance, expansion coverage</li>
+                            <li>Areas with specific risks (flood zones, etc.): Specialized coverage options</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            Insurance Marketing Campaign Plan • Created May 2025
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle main collapsible sections
+            var coll = document.getElementsByClassName("collapsible");
+            for (var i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+            
+            // Handle sub-collapsible sections
+            var subColl = document.getElementsByClassName("sub-collapsible");
+            for (var i = 0; i < subColl.length; i++) {
+                subColl[i].addEventListener("click", function() {
+                    this.classList.toggle("sub-active");
+                    var content = this.nextElementSibling;
+                    var parentContent = this.parentElement.parentElement;
+                    
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                        // Update parent's maxHeight to accommodate the expanded child
+                        parentContent.style.maxHeight = parentContent.scrollHeight + content.scrollHeight + "px";
+                    }
+                });
+            }
+            
+            // Open the first panel by default
+            if (coll.length > 0) {
+                coll[0].click();
+            }
+        });
+    </script>
+</body>
+</html>
